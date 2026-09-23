@@ -1,0 +1,46 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Command Centre</title>
+<meta name="description" content="A private tool for running a small group of YouTube channels.">
+<link rel="icon" href="logo.png"><link rel="stylesheet" href="style.css"></head><body>
+<div class="wrap">
+<header><img src="logo.png" alt=""><span class="name">Command Centre</span></header>
+
+<h1>Command Centre</h1>
+<p class="lede">A private tool for running a small group of YouTube channels.</p>
+
+<h2>What it does</h2>
+<p>Command Centre handles the routine work of operating YouTube channels that we own: uploading finished
+videos, keeping titles and descriptions current, and reading back how each video performed so we can decide
+what to make next. It is used by one operator on channels that operator controls. It is not a product, there
+are no accounts to sign up for, and nobody else's channels are involved.</p>
+
+<h2>How it connects to YouTube</h2>
+<p>Each channel is connected once through Google's standard consent screen. We ask for four permissions and
+use all four:</p>
+<ul>
+  <li><code>youtube.upload</code> — to publish a finished video to the channel it was made for.</li>
+  <li><code>youtube.force-ssl</code> — to update a video's title, description and thumbnail after upload.</li>
+  <li><code>youtube.readonly</code> — to confirm which channel a connection belongs to, so a video is never
+      sent to the wrong one.</li>
+  <li><code>yt-analytics.readonly</code> — to read views, watch time and retention for our own videos.</li>
+</ul>
+<p>Uploads are made privately by default. A person decides whether anything goes public.</p>
+
+<h2>Where the data lives</h2>
+<p>On hardware we control, in a database that does not leave it. There is no third-party analytics service, no
+advertising network, and no data sharing of any kind. The <a href="privacy.html">privacy policy</a> sets out the
+detail.</p>
+
+<h2>YouTube API Services</h2>
+<p>This application uses YouTube API Services. By connecting a channel you are also agreeing to the
+<a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's own handling of your data is
+covered by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. You can review or
+remove this application's access at any time at
+<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+<h2>Contact</h2>
+<p>Ona Mejelo — <a href="mailto:ona@revitalise.io">ona@revitalise.io</a></p>
+
+<nav><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+</div></body></html>
